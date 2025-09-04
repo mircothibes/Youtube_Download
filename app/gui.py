@@ -63,7 +63,8 @@ def _start_download(root, url_var, out_var, audio_only_var, progress):
                 progress_cb=lambda d: _on_progress_safe(root, progress, d),
             )
         except Exception as e:
-            root.after(0, lambda: messagebox.showerror("Error", str(e)))
+            msg = str(e)
+            root.after(0, lambda m=msg: messagebox.showerror("Error", m))
         else:
             root.after(0, lambda: messagebox.showinfo("Done", "Download completed!"))
 
