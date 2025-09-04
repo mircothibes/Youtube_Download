@@ -6,8 +6,11 @@ def download_video(url: str, path: str, audio_only: bool = False, progress_cb: O
         if progress_cb:
             progress_cb(d)
 
-    options = {"outtmpl": f"{path}/%(title)s.%(ext)s", "progress_hooks": [_hook]}
-
+    options =options = {
+    "outtmpl": f"{path}/%(title)s.%(ext)s",
+    "format": "bv*+ba/b",            
+    "merge_output_format": "mp4",    
+}
     if audio_only:
         options["format"] = "bestaudio/best"
         options["postprocessors"] = [
