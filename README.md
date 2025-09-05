@@ -6,6 +6,13 @@ Built in **Python 3**, it leverages [`yt-dlp`](https://github.com/yt-dlp/yt-dlp)
 
 ---
 
+## 📷 Screenshots
+
+### Main Window
+![Main Window](assets/screenshot1.png)
+
+---
+
 ## ✨ Features
 - 🎬 Download **videos** in the best available quality  
 - 🎵 Extract and save **audio only (MP3)**  
