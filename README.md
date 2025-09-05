@@ -11,6 +11,9 @@ Built in **Python 3**, it leverages [`yt-dlp`](https://github.com/yt-dlp/yt-dlp)
 ### Main Window
 ![Main Window](assets/screenshot1.png)
 
+### Download in Progress
+![Download in Progress](assets/screenshot2.png)
+
 ---
 
 ## ✨ Features
